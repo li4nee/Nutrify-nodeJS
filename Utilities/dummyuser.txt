@@ -1,0 +1,70 @@
+
+{
+  "name": "Alice",
+  "age": 25,
+  "email": "alice@example.com",
+  "password": "secure123"
+}
+
+{
+  "name": "Bob",
+  "age": 30,
+  "email": "bob@gmail.com",
+  "password": "secretPass"
+}
+
+{
+  "name": "Charlie",
+  "age": 22,
+  "email": "charlie@hotmail.com",
+  "password": "letmein"
+}
+
+{
+  "name": "Diana",
+  "age": 28,
+  "email": "diana@yahoo.com",
+  "password": "p@ssw0rd"
+}
+
+{
+  "name": "Eva",
+  "age": 23,
+  "email": "eva@gmail.com",
+  "password": "eva123"
+}
+
+{
+  "name": "Frank",
+  "age": 35,
+  "email": "frank@example.com",
+  "password": "frankPass"
+}
+
+{
+  "name": "Grace",
+  "age": 27,
+  "email": "grace@yahoo.com",
+  "password": "gracePass"
+}
+
+{
+  "name": "Harry",
+  "age": 26,
+  "email": "harry@gmail.com",
+  "password": "harry456"
+}
+
+{
+  "name": "Ivy",
+  "age": 29,
+  "email": "ivy@hotmail.com",
+  "password": "ivyPass"
+}
+
+{
+  "name": "Jack",
+  "age": 32,
+  "email": "jack@yahoo.com",
+  "password": "jackPass123"
+}
