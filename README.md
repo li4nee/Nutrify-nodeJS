@@ -42,10 +42,26 @@ npm start
 ### Authentication
 The API uses JSON Web Tokens (JWT) for authentication. Include the generated token in the Authorization header of your requests.
 
-### User Registration
+## User Registration
 
-Endpoint: `POST /register`
-Register a new user by providing the required details in the request body.
+During the registration process in the Nutrify API, users are required to provide the following information:
+
+- **Name**: User's full name.
+- **Age**: User's age, with a minimum age requirement of 12.
+- **Email**: User's email address.
+- **Password**: User's chosen password.
+
+To register a new user, make a `POST` request to the `/register` endpoint, providing the mandatory details in the request body.
+
+Example Request:
+```json
+{
+  "name": "John Doe",
+  "age": 25,
+  "email": "john.doe@example.com",
+  "password": "securepassword123"
+}
+```
 
 ### Login
 Endpoint: `POST /login`
@@ -60,3 +76,19 @@ Retrieve a list of all available food items.
 ### Get Foods by Name
 Endpoint: `GET /foods/name`
 Search for food items by name. Case-insensitive search using regex.
+
+## Example Food Data
+
+```json
+{
+  "_id": {
+    "$oid": "659b8d7f9b442366a019c787"
+  },
+  "name": "Apple",
+  "calorie": 52,
+  "protein": 0.3,
+  "carbohydrates": 14,
+  "fats": 0.2,
+  "fibers": 2.4
+}
+```
