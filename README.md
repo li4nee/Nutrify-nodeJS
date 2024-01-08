@@ -64,8 +64,13 @@ Example Request:
 ```
 
 ### Login
-Endpoint: `POST /login`
-Login with existing credentials. Receive a JWT token upon successful login for authentication in subsequent requests.
+During the login process in the Nutrify API, users are required to send the following information in the request body:
+```json
+Email: User's registered email address.
+Password: User's corresponding password.
+```
+To initiate a login, make a POST request to the /login endpoint, providing the user's email and password in the request body.
+In the successful login response, the server provides a JWT token (_token) that should be included in the Authorization header of subsequent requests for authentication.
 
 ### Food Endpoints
 
