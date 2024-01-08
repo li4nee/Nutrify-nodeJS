@@ -1,6 +1,6 @@
 # Nutrify API
 
-The Nutrify API provides authentication, user registration, login, and access to food macros and tracking data. It is built using Node.js, Express.js, and MongoDB.
+The Nutrify API provides authentication, user registration, login, and access to food macros and tracking your comsumed food data. It is built using Node.js, Express.js, and MongoDB.
 
 
 ## Table of Contents
@@ -44,19 +44,19 @@ The API uses JSON Web Tokens (JWT) for authentication. Include the generated tok
 
 ### User Registration
 
-Endpoint: POST /register
+Endpoint: `POST /register`
 Register a new user by providing the required details in the request body.
 
 ### Login
-Endpoint: POST /login
+Endpoint: `POST /login`
 Login with existing credentials. Receive a JWT token upon successful login for authentication in subsequent requests.
 
 ### Food Endpoints
 
 ### Get All Foods
-Endpoint: GET /foods
+Endpoint: `GET /foods`
 Retrieve a list of all available food items.
 
 ### Get Foods by Name
-Endpoint: GET /foods/:name
+Endpoint: `GET /foods/name`
 Search for food items by name. Case-insensitive search using regex.
