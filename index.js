@@ -145,6 +145,14 @@ catch(err){
 }
 )
 
-app.post("/track",(req,res)=>{
-
+app.post("/track",async(req,res)=>{
+let trackData= req.body;
+try{
+ let data = await trackingModel.create(trackData);
+  res.send({Message:"Tracked"})
+}
+catch(err)
+{
+res.status(500).send({Message:err})
+}
 })
